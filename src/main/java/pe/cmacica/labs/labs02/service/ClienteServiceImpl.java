@@ -18,6 +18,6 @@ public class ClienteServiceImpl implements ClienteService {
 
     @Override
     public String getCuenta(int id) {
-        return "12323491232-1312";
+        return clienteRepository.getCuenta(id);
     }
 }
