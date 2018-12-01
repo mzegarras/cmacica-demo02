@@ -1,12 +1,14 @@
 package pe.cmacica.labs.labs02.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class ClienteRepositoryImpl implements  ClienteRepository {
 
     @Autowired
+    //@Qualifier("clienteProxyV2")
     private ClienteProxy clienteProxy;
 
     @Override
