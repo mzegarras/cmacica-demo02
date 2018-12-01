@@ -18,8 +18,8 @@ public class ClienteController {
     @Autowired
     private  ClienteService clienteService;
 
-
-    //http://localhost:8080/customer/{id}/facturas{idfactura}
+    //@GetMapping("/{id}/facturas/{idfactura}")
+    //http://localhost:8080/customer/{id}/facturas/{idfactura}
 
     //http://localhost:8080/cliente/80990
     @GetMapping("/{id}")
