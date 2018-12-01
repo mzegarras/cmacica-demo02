@@ -9,11 +9,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import pe.cmacica.labs.labs02.config.MailProperties;
 import pe.cmacica.labs.labs02.service.ClienteService;
 
 @Controller
 @RequestMapping("/cliente")
 public class ClienteController {
+
+    @Autowired
+    private MailProperties mailProperties;
 
     @Autowired
     private  ClienteService clienteService;
@@ -26,6 +30,10 @@ public class ClienteController {
     public HttpEntity<String> getNombres(@PathVariable("id") int id){
 
         //ClienteService clienteService = new ClienteServiceImpl();
+        System.out.println(mailProperties.getPassword());
+        System.out.println(mailProperties.getServer());
+        System.out.println(mailProperties.getUser());
+
 
         return ResponseEntity.ok(clienteService.getNombres(id));
 
