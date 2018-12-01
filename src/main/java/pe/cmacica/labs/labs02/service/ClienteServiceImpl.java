@@ -20,4 +20,11 @@ public class ClienteServiceImpl implements ClienteService {
     public String getCuenta(int id) {
         return clienteRepository.getCuenta(id);
     }
+
+    @Override
+    public int calcular(int n1, int n2) {
+        return clienteRepository.calcular(n1,n2);
+    }
+
+
 }
