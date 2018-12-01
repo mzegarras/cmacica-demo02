@@ -1,14 +1,23 @@
 server:
   port: 9060
 
+
+
+logging.level:
+  root: INFO
+  pe:
+    cmacica:
+      labs:
+        labs02: INFO
+  #org.springframework.web: INFO
+
 labs02:
   igv: 18
   nombre: Juan Perez
   url: http://www.google.com
   cuenta: 11242314231-23423423
-
-mail:
-  server: mail.com
-  port: 3033
-  user: admin
-  password: password
+  mail:
+    server: mail.com
+    port: 3033
+    user: admin
+    password: password

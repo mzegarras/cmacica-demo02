@@ -6,7 +6,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties(prefix = "mail")
+@ConfigurationProperties(prefix = "labs02.mail")
 @EnableConfigurationProperties
 public class MailProperties {
 
