@@ -71,4 +71,10 @@ https://www.slf4j.org/api/constant-values.html
 https://github.com/mzegarras/cmacica-demo01
 https://github.com/mzegarras/cmacica-demo02
  
- 
+
+External Properties
+```` 
+https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-external-config.html
+java -jar labs-02-0.0.1-SNAPSHOT.jar --spring.config.location=/Proyectos/cmacica/curso_java/labs/labs-02/application.yml
+````
+
